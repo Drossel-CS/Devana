@@ -50,7 +50,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 html {
-	line-height: 1.15; /* 1 */
+	line-height: 1.15; 1
 	-webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -61,8 +61,9 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
+html, body {
 	margin: 0;
+	padding: 0;
 }
 
 /**
@@ -979,22 +980,26 @@ object {
 	display: block;
 }
 
-
+header, main, footer{
+	margin: 0;
+	padding: 0;
+}
 
 .wrapp{
-	width: 980px;
+	max-width: 980px;
 	margin: 0 auto;
 }
 
 
 
-.site-brads{
+.site-brands{
 	width: 100%;
 	text-align: center;
-	border-top: 1px solid red;
+	border-top: 1px solid #f4f4f4;
+	margin-top: 10px;
 }
 .widget_media_image{
-	padding: 0 13px;
+	padding: 5px 13px;
 	display: inline-block;
 }
 
@@ -1008,6 +1013,8 @@ object {
 }
 .site-footer{
 	background: #F7F7F7;
+	padding-bottom: 300px;
+	clear: both;
 }
 	.site-social{
 		padding: 10px;
@@ -1015,18 +1022,58 @@ object {
 		color: #747474;
 		text-align: center;
 		border-top: 1px solid #EAEAEA;
-
+		clear: both
 	}
 		.site-social i{
 			padding: 0 20px 0 20px;
 		}
 	.site-info{
-		/* margin-top: 30px; */
 		border-top: 1px solid #EAEAEA;
+		clear: both;
+		color: #999;
+		clear: both;
 	}
+	.widget_nav_menu, .widget_text{
+		float: left;
+		width: 25%;
+		margin-top: 20px;
+		font-family: 'Montserrat', sans-serif;
+	}
+	.textwidget{
+		line-height: 2;
+		padding: 0;
+		margin: 0;
+	}
+	.widgettitle{
+		text-transform: uppercase;
+		font-size: 0.9em;
+		font-weight: 700;
+		font-family: 'Montserrat', sans-serif;
+	}
+	.menu-footer-menu-1-container ul, .menu-footer-menu-2-container ul, .menu-footer-menu-3-container ul ,.menu-footer-menu-4-container ul{
+		padding: 0;
+		margin: 0;
+	}
+	.menu-footer-menu-1-container ul li, .menu-footer-menu-2-container ul li, .menu-footer-menu-3-container ul li,.menu-footer-menu-4-container ul li{
+		padding: 3px 0;
+		margin: 0;
+		list-style: none;
+		/* display: block; */
+	}
+	.menu-footer-menu-1-container ul li a, .menu-footer-menu-2-container ul li a, .menu-footer-menu-3-container ul li a,.menu-footer-menu-4-container ul li a, .textwidget{
+		text-decoration: none;
+		color: #555;
+		font-family: 'Open Sans';
+		font-size: 0.9em;
+	}
+	.menu-footer-menu-1-container ul li a:hover, .menu-footer-menu-2-container ul li a:hover, .menu-footer-menu-3-container ul li a:hover,.menu-footer-menu-4-container ul li a:hover{
+		color: #B438A2;
+	}
+
+
 	.copy{
 		font-size: .6em;
-		text-align: center;
+		float: left;
 	}
 	.author{
 		float: right;
