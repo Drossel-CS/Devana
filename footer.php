@@ -13,10 +13,22 @@
 
 	</div><!-- #content -->
 
+	<div class="site-brands wrapp">
+		<?php dynamic_sidebar( 'Brands' ); ?>
+	</div>
 	<footer id="colophon" class="site-footer">
+		<div class="site-footer-menu">
+			<!-- <?php dynamic_sidebar( 'Brands' ); ?> -->
+		</div>
+		<div class="wrapp site-social">
+			<i class="icon-instagram"></i>
+			<i class="icon-facebook-squared"></i>
+			<i class="icon-twitter"></i>
+			<i class="icon-youtube"></i>
+			<i class="icon-pinterest"></i>
+		</div>
 		<div class="site-info wrapp">
-			<p>&copy 2014-<?php echo date('Y '); bloginfo('name'); ?></p>
-				<p>Zrobil Drossel</p>
+			<p class="copy">&copy 2014-<?php echo date('Y '); bloginfo('name'); ?></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

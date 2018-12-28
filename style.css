@@ -994,7 +994,21 @@ object {
 	clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
 	background: #F7F7F7;
 }
+	.site-social{
+		padding: 25px;
+		font-size: 25px;
+		color: #747474;
+		text-align: center;
+		border-top: 1px solid #EAEAEA;
+
+	}
+		.site-social i{
+			padding: 0 20px 0 20px;
+		}
 	.site-info{
-		/* border-top: 1px solid #f7f7f7; */
-		border-top: 1px solid red;
+		/* margin-top: 30px; */
+		border-top: 1px solid #EAEAEA;
+	}
+	.copy{
+		font-size: .6em;
 	}
