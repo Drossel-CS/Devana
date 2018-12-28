@@ -16,9 +16,13 @@
 	<div class="site-brands wrapp">
 		<?php dynamic_sidebar( 'Brands' ); ?>
 	</div>
+	<div class="site-footer-up"></div>
 	<footer id="colophon" class="site-footer">
-		<div class="site-footer-menu">
-			<!-- <?php dynamic_sidebar( 'Brands' ); ?> -->
+		<div class="site-footer-menu wrapp">
+			<?php dynamic_sidebar( 'footer-menu-1' ); ?>
+			<?php dynamic_sidebar( 'footer-menu-2' ); ?>
+			<?php dynamic_sidebar( 'footer-menu-3' ); ?>
+			<?php dynamic_sidebar( 'footer-menu-4' ); ?>
 		</div>
 		<div class="wrapp site-social">
 			<i class="icon-instagram"></i>
@@ -28,7 +32,8 @@
 			<i class="icon-pinterest"></i>
 		</div>
 		<div class="site-info wrapp">
-			<p class="copy">&copy 2014-<?php echo date('Y '); bloginfo('name'); ?></p>
+			<p class="copy">&copy 2014-<?php echo date('Y '); bloginfo('name'); ?>, Všetky práva vyhradené | Všeobecné podmienky</p>
+			<p class="author">zrobil Drossel</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
