@@ -996,7 +996,7 @@ header, main, footer{
 	width: 100%;
 	text-align: center;
 	border-top: 1px solid #f4f4f4;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 .widget_media_image{
 	padding: 5px 13px;
@@ -1009,7 +1009,7 @@ header, main, footer{
 	clip-path: polygon(0 0, 100% 90%, 100% 100%, 0% 100%);
 	background: #F7F7F7;
 	width: 100%;
-	height: 20px;
+	height: 30px;
 }
 .site-footer{
 	background: #F7F7F7;
@@ -1046,9 +1046,10 @@ header, main, footer{
 	}
 	.widgettitle{
 		text-transform: uppercase;
-		font-size: 0.9em;
+		font-size: 0.8em;
 		font-weight: 700;
 		font-family: 'Montserrat', sans-serif;
+		color: #707070;
 	}
 	.menu-footer-menu-1-container ul, .menu-footer-menu-2-container ul, .menu-footer-menu-3-container ul ,.menu-footer-menu-4-container ul{
 		padding: 0;
@@ -1062,9 +1063,11 @@ header, main, footer{
 	}
 	.menu-footer-menu-1-container ul li a, .menu-footer-menu-2-container ul li a, .menu-footer-menu-3-container ul li a,.menu-footer-menu-4-container ul li a, .textwidget{
 		text-decoration: none;
-		color: #555;
+		color: #707070;
 		font-family: 'Open Sans';
-		font-size: 0.9em;
+		font-size: 0.8em;
+		/* letter-spacing: 1.5px; */
+		/* text-transform: uppercase; */
 	}
 	.menu-footer-menu-1-container ul li a:hover, .menu-footer-menu-2-container ul li a:hover, .menu-footer-menu-3-container ul li a:hover,.menu-footer-menu-4-container ul li a:hover{
 		color: #B438A2;
@@ -1079,3 +1082,7 @@ header, main, footer{
 		float: right;
 		font-size: .6em;
 	}
+		.author a{
+			color: #B438A2;
+			text-decoration: none;
+		}

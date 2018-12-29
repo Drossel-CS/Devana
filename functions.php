@@ -187,6 +187,12 @@ function add_google_fonts(){
 }
 
 /**
+ * Shortcode activation
+ */
+add_filter( 'widget_text', 'shortcode_unautop' );
+add_filter( 'widget_text', 'do_shortcode');
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

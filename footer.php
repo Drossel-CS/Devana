@@ -12,7 +12,7 @@
 ?>
 
 	</div><!-- #content -->
-
+	<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>  <!-- instagram shortcode -->
 	<div class="site-brands wrapp">
 		<?php dynamic_sidebar( 'Brands' ); ?>
 	</div>
@@ -33,7 +33,7 @@
 		</div>
 		<div class="site-info wrapp">
 			<p class="copy">&copy 2014-<?php echo date('Y '); bloginfo('name'); ?>, Všetky práva vyhradené | Všeobecné podmienky</p>
-			<p class="author">zrobil Drossel</p>
+			<p class="author">zrobil <a href="https://www.drossel.sk" target="_blank">Drossel</a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
