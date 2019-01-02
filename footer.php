@@ -14,10 +14,17 @@
 	</div><!-- #content -->
 	<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>  <!-- instagram shortcode -->
 	<div class="site-brands wrapp">
+		<div class="heading-center">
+			značky naších šiat
+		</div>
 		<?php dynamic_sidebar( 'Brands' ); ?>
 	</div>
 	<div class="site-footer-up"></div>
 	<footer id="colophon" class="site-footer">
+		<div class="wrapp site-newsletter">
+			<!-- SEM POJDE NEWSLETTER -->
+			<p>NEWSLETTER</p>
+		</div>
 		<div class="site-footer-menu wrapp">
 			<?php dynamic_sidebar( 'footer-menu-1' ); ?>
 			<?php dynamic_sidebar( 'footer-menu-2' ); ?>

@@ -990,12 +990,32 @@ header, main, footer{
 	margin: 0 auto;
 }
 
+.heading-center{
+	display: grid;
+	grid-template-columns: 1fr max-content 1fr;
+	grid-column-gap: 1.5rem;
+	align-items: center;
+	padding: 20px 0;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: .9em;
+	color: #817F7F;
+	font-family: 'Montserrat';
+}
 
+.heading-center::before, .heading-center::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: currentColor;
+	color: #f4f4f4;
+}
 
 .site-brands{
 	width: 100%;
 	text-align: center;
-	border-top: 1px solid #f4f4f4;
+	/* border-top: 1px solid #f4f4f4; */
 	margin-top: 20px;
 }
 .widget_media_image{
@@ -1016,6 +1036,9 @@ header, main, footer{
 	padding-bottom: 300px;
 	clear: both;
 }
+	.site-newsletter{
+		border-bottom: 1px solid #EAEAEA;
+	}
 	.site-social{
 		padding: 10px;
 		font-size: 25px;
@@ -1035,7 +1058,7 @@ header, main, footer{
 	}
 	.widget_nav_menu, .widget_text{
 		float: left;
-		width: 25%;
+		width: 20%;
 		margin-top: 20px;
 		font-family: 'Montserrat', sans-serif;
 	}
@@ -1086,3 +1109,33 @@ header, main, footer{
 			color: #B438A2;
 			text-decoration: none;
 		}
+
+		@media screen and (max-width: 1100px) {
+			.wrapp{
+				width: 95%;
+			}
+		}
+		@media screen and (max-width: 870px) {
+			.widget{
+				float: none;
+				width: 100%;
+				margin: 0 auto;
+				margin-bottom: 50px;
+			}
+			.menu-footer-menu-1-container ul li, .menu-footer-menu-2-container ul li, .menu-footer-menu-3-container ul li,.menu-footer-menu-4-container ul li{
+				padding: 0px;
+				border-bottom: 1px solid #f4f4f4;
+			}
+			.menu-footer-menu-1-container ul li a, .menu-footer-menu-2-container ul li a, .menu-footer-menu-3-container ul li a,.menu-footer-menu-4-container ul li a{
+				display: block;
+				padding: 14px 8px;
+			}
+			.menu-footer-menu-1-container ul li a:hover, .menu-footer-menu-2-container ul li a:hover, .menu-footer-menu-3-container ul li a:hover,.menu-footer-menu-4-container ul li a:hover{
+				color: #fff;
+				background: #B438A2;
+				padding: 14px 8px;
+			}
+		}
+
+
+
