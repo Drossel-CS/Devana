@@ -989,7 +989,9 @@ header, main, footer{
 	max-width: 980px;
 	margin: 0 auto;
 }
-
+.main-navigation{
+	border-bottom: 1px solid #EAEAEA;
+}
 .heading-center{
 	display: grid;
 	grid-template-columns: 1fr max-content 1fr;

@@ -39,7 +39,7 @@
 			<i class="icon-pinterest"></i>
 		</div>
 		<div class="site-info wrapp">
-			<p class="copy">&copy 2014-<?php echo date('Y '); bloginfo('name'); ?>, Všetky práva vyhradené | Všeobecné podmienky</p>
+			<p class="copy">&copy <?php echo date('Y '); bloginfo('name'); ?>, Všetky práva vyhradené | Všeobecné podmienky</p>
 			<p class="author">zrobil <a href="https://www.drossel.sk" target="_blank">Drossel</a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
