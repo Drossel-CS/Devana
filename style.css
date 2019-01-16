@@ -51,7 +51,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 html {
-	line-height: 1.15; 1
+	line-height: 1.15; 
 	-webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -1143,8 +1143,8 @@ header, main, footer{
 
 
 /*--------------------------------------------------------------
-## Products
---------------------------------------------------------------*/
+# Products
+--------------------------------------------------------------*/	
 
  /* relevant styles */
  .img__wrap {
