@@ -12,7 +12,10 @@
 ?>
 
 	</div><!-- #content -->
-	<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>  <!-- instagram shortcode -->
+	<div class="instagram-gallery">
+		<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>  <!-- instagram shortcode -->
+	</div>
+	
 	<div class="site-brands wrapp">
 		<div class="heading-center">
 			značky naších šiat
@@ -23,7 +26,6 @@
 	<footer id="colophon" class="site-footer">
 		<div class="wrapp site-newsletter">
 			<!-- SEM POJDE NEWSLETTER -->
-			<p>NEWSLETTER</p>
 		</div>
 		<div class="site-footer-menu wrapp">
 			<?php dynamic_sidebar( 'footer-menu-1' ); ?>
