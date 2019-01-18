@@ -36,8 +36,8 @@
 		<div class="wrapp site-social">
 			<i class="icon-instagram"></i>
 			<i class="icon-facebook-squared"></i>
-			<i class="icon-twitter"></i>
-			<i class="icon-youtube"></i>
+			<!-- <i class="icon-twitter"></i> -->
+			<!-- <i class="icon-youtube"></i> -->
 			<i class="icon-pinterest"></i>
 		</div>
 		<div class="site-info wrapp">

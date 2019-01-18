@@ -685,6 +685,59 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
+/* Drossel navigation definitions */
+
+.menu-item{
+	text-transform: uppercase;
+}
+.current-menu-item{
+	font-weight: 600;
+}
+
+.site-header-primary-nav{
+	position: absolute;
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 90px;
+	height: auto;
+	/* background: #fff; */
+}
+.main-navigation{
+	width: 100%;
+}
+.menu-menu-1-container{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	border-bottom: 1px solid #f4f4f4;
+}
+.nav.main-navigation li{
+	padding: 20px 30px;
+}
+.menu-items{
+	height: 60px;
+	height: auto;
+}
+.menu-item{
+	padding-top: 20px;
+}
+
+
+
+.menu-toggle:active {
+	outline: none;
+	border: none;
+	}
+	
+.menu-toggle:focus {outline:0;}
+
+
+
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
