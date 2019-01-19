@@ -66,7 +66,7 @@ function drossel_products( $atts, $content = null ) {
 						<?php echo get_post_meta( get_the_ID(), 'description', true ); ?><br>
 						Veľkosť: <strong><?php echo get_post_meta( get_the_ID(), 'size', true ); ?></strong><br>
 						Dostupnosť: <?php echo (get_post_meta( get_the_ID(), 'availability', true ) == 'yes' )? 'áno' : 'vypožičané';  ?><br>
-						Cena: <?php echo get_post_meta( get_the_ID(), 'price', true ); ?> €
+						Výpožičné: <?php echo get_post_meta( get_the_ID(), 'price', true ); ?> €
 					</p>
 					
 				</div>
