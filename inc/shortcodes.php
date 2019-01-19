@@ -31,7 +31,7 @@ function drossel_products( $atts, $content = null ) {
 
 	$args = array(
 		'post_type' => 'products',
-		'posts_per_page' => 5,
+		'posts_per_page' => 5, 
 		'post_status' => 'publish',
 		'product_category' => $atts['category']
 		// 'meta_key' => 'category',
@@ -62,10 +62,10 @@ function drossel_products( $atts, $content = null ) {
 				<img class="img__img" src="<?php echo $image[0]; ?>">
 				<div class="img__description_layer"> 
 					<p class="img__description">
-						<?php echo get_the_title(); ?><br>
+						<strong><?php echo get_the_title(); ?></strong><br>
 						<?php echo get_post_meta( get_the_ID(), 'description', true ); ?><br>
-						Veľkosť: <?php echo get_post_meta( get_the_ID(), 'size', true ); ?><br>
-						Dostupnosť: <?php echo (get_post_meta( get_the_ID(), 'availability', true ) == 'yes' )? 'áno' : 'nie';  ?><br>
+						Veľkosť: <strong><?php echo get_post_meta( get_the_ID(), 'size', true ); ?></strong><br>
+						Dostupnosť: <?php echo (get_post_meta( get_the_ID(), 'availability', true ) == 'yes' )? 'áno' : 'vypožičané';  ?><br>
 						Cena: <?php echo get_post_meta( get_the_ID(), 'price', true ); ?> €
 					</p>
 					

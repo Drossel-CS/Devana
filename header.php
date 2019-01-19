@@ -17,7 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Drossel | CREATIVE STUDIO">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css?family=Caveat:400,700&amp;subset=latin-ext" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>

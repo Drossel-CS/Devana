@@ -168,6 +168,7 @@ function devana_scripts()
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
+    wp_enqueue_style( 'hamburgers', get_stylesheet_directory_uri() . '/css/css/hamburgers.css' );
 }
 add_action('wp_enqueue_scripts', 'devana_scripts');
 /*
