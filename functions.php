@@ -161,6 +161,15 @@ function devana_scripts()
 {
     wp_enqueue_style('devana-style', get_stylesheet_uri());
 
+    wp_enqueue_script('jquery');
+    if (!is_admin()) {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-2.2.4.min.js', '2.2.4', false);
+        wp_enqueue_script('jquery');
+    }
+
+    wp_enqueue_script('jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js', array('jquery'), '1.8.6');
+
     wp_enqueue_script('devana-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 
     wp_enqueue_script('devana-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
