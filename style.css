@@ -1270,7 +1270,7 @@ header, main, footer{
 	float: none;
 	width: 100%;
 	clear: both;
-	padding: 20px 10px;
+	padding: 20px 0;
 	text-align: center;
 }
 	.pagination a{
