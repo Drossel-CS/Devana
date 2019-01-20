@@ -31,7 +31,7 @@ function drossel_products( $atts, $content = null ) {
 
 	$args = array(
 		'post_type' => 'products',
-		'posts_per_page' => 5, 
+		'posts_per_page' => 12, 
 		'post_status' => 'publish',
 		'product_category' => $atts['category']
 		// 'meta_key' => 'category',
@@ -65,7 +65,7 @@ function drossel_products( $atts, $content = null ) {
 						<strong><?php echo get_the_title(); ?></strong><br>
 						<?php echo get_post_meta( get_the_ID(), 'description', true ); ?><br>
 						Veľkosť: <strong><?php echo get_post_meta( get_the_ID(), 'size', true ); ?></strong><br>
-						Dostupnosť: <?php echo (get_post_meta( get_the_ID(), 'availability', true ) == 'yes' )? 'áno' : 'vypožičané';  ?><br>
+						Dostupnosť: <strong><?php echo (get_post_meta( get_the_ID(), 'availability', true ) == 'yes' )? 'áno' : 'vypožičané';  ?></strong><br>
 						Výpožičné: <?php echo get_post_meta( get_the_ID(), 'price', true ); ?> €
 					</p>
 					
@@ -79,7 +79,9 @@ function drossel_products( $atts, $content = null ) {
 	wp_reset_postdata();
 	?>
 	<nav class="pagination">
-        <?php pagination_bar( $loop ); ?>
+        <div class="heading-center">
+			<div><?php pagination_bar( $loop ); ?></div>
+		</div>
     </nav>
 	<?php
 	// Reset main query object---------------
