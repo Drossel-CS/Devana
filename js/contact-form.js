@@ -77,7 +77,7 @@ $(document).ready( function () {
                             $('.js-form-submission').removeClass('js-show-feedback');
                             $('.js-form-error').addClass('js-show-feedback');
                              form.find('input, button, textarea').removeAttr('disabled', 'disabled', 'disabled');  
-                        },1000);  
+                        },300);  
                     } 
                     else {
                         setTimeout(function(){
@@ -85,7 +85,7 @@ $(document).ready( function () {
                             $('.js-form-success').addClass('js-show-feedback');
                             form.find('input, textarea').removeAttr('disabled', 'disabled').val('');
                             $('#personal-data-checkbox').attr('checked', false);
-                        }, 1000);
+                        }, 300);
                     }
                 }
                 
