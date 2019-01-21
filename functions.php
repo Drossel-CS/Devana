@@ -172,6 +172,8 @@ function devana_scripts()
 
     wp_enqueue_script('devana-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 
+    wp_enqueue_script( 'script-contact-form', get_template_directory_uri() . '/js/contact-form.js', array(), '1.3', true);
+    
     wp_enqueue_script('devana-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -248,6 +250,8 @@ if (class_exists('WooCommerce')) {
  */
 require get_template_directory() . '/inc/shortcodes.php';
 require get_template_directory() . '/inc/products.php';
+require get_template_directory() . '/inc/ajax.php';
+
 
 /*
 ==================================================
@@ -277,3 +281,15 @@ function pagination_bar($custom_query)
         ));
     }
 }
+
+
+function mailtrap($phpmailer) {
+    $phpmailer->isSMTP();
+    $phpmailer->Host = 'smtp.mailtrap.io';
+    $phpmailer->SMTPAuth = true;
+    $phpmailer->Port = 2525;
+    $phpmailer->Username = '20c5c6c9751da6';
+    $phpmailer->Password = '13663025133b48';
+  }
+  
+  add_action('phpmailer_init', 'mailtrap');
