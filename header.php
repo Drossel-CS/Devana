@@ -29,7 +29,6 @@
 	<div class="site-branding wrapp">
 		
 		<div class="site-header-group">
-			<div class="site-header-bags"></div>
 			<div class="site-header-logo">
 				<?php the_custom_logo();?>
 			</div>
@@ -41,7 +40,7 @@
 				</button>
 			</div>
 		</div>
-	
+		<div class="heading-center"><?php echo bloginfo('description');?></div>
 		<div class="site-header-primary-nav wrapp">
 			<nav id="site-navigation" class="main-navigation">
 				<?php

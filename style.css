@@ -731,10 +731,10 @@ nav.main-navigation li a:hover {
 	width: 100%;
 	height: auto;
 	background: #fff;
-	border-top: 1px solid #f4f4f4;
+	/* border-top: 1px solid #EAEAEA; */
 }
 .nav.main-navigation li{
-	padding: 20px 30px;
+	padding: 10px 30px;
 }
 .menu-items{
 	height: 60px;
@@ -1043,40 +1043,39 @@ header, main, footer{
 	margin: 0 auto;
 }
 .site-header-group{
-	float: left;
 	clear: both;
+	float: none;
 }
 .site-header-logo{
-	background: red;
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 	text-align: center;
 }
-.site-header-bags{
-	background: #21759b;
-	float: left;
-	width: 10%;
-}
+
 .site-header-burger{
-	background: #21759b;
 	float: right;
 	width: 10%;
+	position: relative;
+	margin-right: 20px;
 }
 
 .main-navigation{
+	width: 100%;
 	border-bottom: 1px solid #EAEAEA;
+	clear: both;
 }
 .heading-center{
 	display: grid;
 	grid-template-columns: 1fr max-content 1fr;
 	grid-column-gap: 1.5rem;
 	align-items: center;
-	padding: 20px 0;
+	padding: 0;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-size: .9em;
 	color: #817F7F;
 	font-family: 'Montserrat';
+	clear: both;
 }
 
 .heading-center::before, .heading-center::after {
@@ -1085,7 +1084,7 @@ header, main, footer{
 	width: 100%;
 	height: 1px;
 	background-color: currentColor;
-	color: #f4f4f4;
+	color: #EAEAEA;
 }
 
 .site-brands{
@@ -1198,9 +1197,12 @@ header, main, footer{
 				margin: 0 auto;
 				margin-bottom: 50px;
 			}
+			.main-navigation{
+				border: none;
+			}
 			.menu-footer-menu-1-container ul li, .menu-footer-menu-2-container ul li, .menu-footer-menu-3-container ul li,.menu-footer-menu-4-container ul li{
 				padding: 0px;
-				border-bottom: 1px solid #f4f4f4;
+				border-bottom: 1px solid #EAEAEA;
 			}
 			.menu-footer-menu-1-container ul li a, .menu-footer-menu-2-container ul li a, .menu-footer-menu-3-container ul li a,.menu-footer-menu-4-container ul li a{
 				display: block;
@@ -1225,6 +1227,7 @@ header, main, footer{
 	position: relative;
 	width: 33.3333%;
 	border: 2px solid white;
+	cursor: pointer;
 
   }
 
@@ -1245,6 +1248,7 @@ header, main, footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
   
 	/* transition effect. not necessary */
 	transition: opacity .2s, visibility .2s;
@@ -1281,6 +1285,7 @@ header, main, footer{
 	}
 	.prev, .next{
 		color: #747474;
+		display: inline-block;
 	}
 	.current{
 		font-weight: 600;
