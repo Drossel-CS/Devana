@@ -54,7 +54,18 @@ function drossel_products( $atts, $content = null ) {
 	// include 'templates/newsletter.php';
 	
 	//tu nastav pocet produktov na stranke
-	$post_per_page = 12;
+	$post_per_page = 7;
+
+	//pocet produktov v danej kategorii celkom
+	$args = array(
+	'post_type' => 'products',
+	'post_status' => 'published',
+	'product_category' => $atts['category'],
+	'numberposts' => -1,
+		);
+	$products_count = count( get_posts( $args ) );
+	
+
 
 
 	$args = array(
@@ -111,7 +122,7 @@ function drossel_products( $atts, $content = null ) {
 	wp_reset_postdata();
 
 	// if($post_per_page < $products_count ):
-	if( !(is_front_page()) ):?>
+	if( !(is_front_page()) && $post_per_page < $products_count  ):?>
 		<nav class="pagination">
 			<div class="heading-center">
 				<div><?php pagination_bar( $loop ); ?></div>
