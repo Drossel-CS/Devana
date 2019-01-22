@@ -10,11 +10,11 @@
 /*
 ==================================================
 CONTACT FORM
+
+Format: [contact_form]
 ==================================================
  */
 function drossel_contact_form( $atts, $content = null ) {
-	
-	//[contact_form]
 	
 	//get the attributes
 	$atts = shortcode_atts(
@@ -33,11 +33,14 @@ add_shortcode( 'contact_form', 'drossel_contact_form' );
 
 /*
 ==================================================
-PRODUCTS
+PRODUCTS 
+Format: [products category="here is your category name"]
 ==================================================
  */
 function drossel_products( $atts, $content = null ) {
 	
+
+
 	//get the attributes
 	$atts = shortcode_atts(
 		array(
