@@ -12,7 +12,7 @@
 ?>
 
 	</div><!-- #content -->
-	<div class="instagram-gallery">
+	<div class="instagram-gallery wrapper">
 		<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>  <!-- instagram shortcode -->
 	</div>
 	
