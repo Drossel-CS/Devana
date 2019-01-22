@@ -54,7 +54,7 @@ function drossel_products( $atts, $content = null ) {
 	// include 'templates/newsletter.php';
 	
 	//tu nastav pocet produktov na stranke
-	$post_per_page = 7;
+	$post_per_page = 12;
 
 	//pocet produktov v danej kategorii celkom
 	$args = array(
