@@ -10,7 +10,6 @@
 /*
 ==================================================
 CONTACT FORM
-
 Format: [contact_form]
 ==================================================
  */
@@ -53,10 +52,13 @@ function drossel_products( $atts, $content = null ) {
 	//return HTML
 	ob_start();
 	// include 'templates/newsletter.php';
+	
+	//tu nastav pocet produktov na stranke
+	$post_per_page = 12;
 
 	$args = array(
 		'post_type' => 'products',
-		'posts_per_page' => 12, 
+		'posts_per_page' => $post_per_page, 
 		'post_status' => 'publish',
 		'product_category' => $atts['category']
 		// 'meta_key' => 'category',
@@ -78,6 +80,9 @@ function drossel_products( $atts, $content = null ) {
 	?>
 	  <div>
 		<?php
+	
+	$products_count = 0;
+
 	while ($loop->have_posts()):
 		$loop->the_post();
 	
@@ -98,17 +103,19 @@ function drossel_products( $atts, $content = null ) {
 			</div>
 			<?php
 		endif;
-	
+		$products_count = $products_count+1;
 	endwhile;
 
 	wp_reset_postdata();
-	?>
-	<nav class="pagination">
-        <div class="heading-center">
-			<div><?php pagination_bar( $loop ); ?></div>
-		</div>
-    </nav>
-	<?php
+
+	if($post_per_page < $products_count ):?>
+		<nav class="pagination">
+			<div class="heading-center">
+				<div><?php pagination_bar( $loop ); ?></div>
+			</div>
+		</nav>
+	<?php endif;
+	
 	// Reset main query object---------------
 	$wp_query = NULL;
 	$wp_query = $temp_query;
