@@ -2,7 +2,7 @@
 // kostra kontaktneho formularu.
 ?>
 
-<div class="heading-center ">Kontaktný formulár</div>
+
 <form id="drosselContactForm"  action="#" method="post" data-url="<?php echo admin_url('admin-ajax.php'); ?>">
 
 	<div class="site-contact-left">
@@ -25,7 +25,6 @@
     <div class="site-contact-right">
         <p>
             <input type="checkbox" name="personal-data-checkbox" id="personal-data-checkbox"> Súhlasím so spracovaním osobných údajov v zmysle GDPR. *</br>
-
         </p>
         <p class="mini">* Povinné položky</p>
     </div>
