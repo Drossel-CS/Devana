@@ -22,17 +22,17 @@
 		</div>
 		<?php dynamic_sidebar( 'Brands' ); ?>
 	</div>
-	<div class="site-footer-up"></div>
+	<!-- ´ -->
 	<footer id="colophon" class="site-footer">
-		<div class="wrapp site-newsletter">
-			<!-- SEM POJDE NEWSLETTER -->
-		</div>
-		<div class="site-footer-menu wrapp">
+		<!-- <div class="wrapp site-newsletter">
+			
+		</div> -->
+		<!-- <div class="site-footer-menu wrapp">
 			<?php dynamic_sidebar( 'footer-menu-1' ); ?>
 			<?php dynamic_sidebar( 'footer-menu-2' ); ?>
 			<?php dynamic_sidebar( 'footer-menu-3' ); ?>
 			<?php dynamic_sidebar( 'footer-menu-4' ); ?>
-		</div>
+		</div> -->
 		<div class="wrapp site-social">
 			<i class="icon-instagram"></i>
 			<i class="icon-facebook-squared"></i>
