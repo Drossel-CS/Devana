@@ -108,8 +108,8 @@ function drossel_products( $atts, $content = null ) {
 						<strong><?php echo get_the_title(); ?></strong><br>
 						<?php echo get_post_meta( get_the_ID(), 'description', true ); ?><br>
 						Veľkosť: <strong><?php echo get_post_meta( get_the_ID(), 'size', true ); ?></strong><br>
-						Dostupnosť: <strong><?php echo (get_post_meta( get_the_ID(), 'availability', true ) == 'yes' )? 'áno' : 'vypožičané';  ?></strong><br>
-						Výpožičné: <?php echo get_post_meta( get_the_ID(), 'price', true ); ?> €
+						<!-- Dostupnosť: <strong><?php //echo (get_post_meta( get_the_ID(), 'availability', true ) == 'yes' )? 'áno' : 'vypožičané';  ?></strong><br> -->
+						Požičovné: <?php echo get_post_meta( get_the_ID(), 'price', true ); ?> €
 					</p>
 					
 				</div>

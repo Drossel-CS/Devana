@@ -88,8 +88,8 @@ function wpt_events_location() {
     $description = get_post_meta( $post->ID, 'description', true );
     $price = get_post_meta( $post->ID, 'price', true );
     $size = get_post_meta( $post->ID, 'size', true );
-    $availability = get_post_meta( $post->ID, 'availability', true );
-    if($availability == '') $availability = 'yes';
+    // $availability = get_post_meta( $post->ID, 'availability', true );
+    // if($availability == '') $availability = 'yes';
 
     // Output the field
     echo '<label for="description">Popis:</label>';
@@ -100,10 +100,10 @@ function wpt_events_location() {
     echo '<input type="text" name="size" value="' . esc_textarea( $size )  . '" class="widefat">';
 
     //Dostupnost
-    echo '<label for="availability">Dostupnosť:</label><select name="availability" class="widefat">';
-    echo '<option '.(($availability=='yes')?'selected="selected"':"").' value="yes">Ano</option>';
-    echo '<option '.(($availability=='no')?'selected="selected"':"").' value="no">Nie</option>';
-    echo '</select>'; 
+    // echo '<label for="availability">Dostupnosť:</label><select name="availability" class="widefat">';
+    // echo '<option '.(($availability=='yes')?'selected="selected"':"").' value="yes">Ano</option>';
+    // echo '<option '.(($availability=='no')?'selected="selected"':"").' value="no">Nie</option>';
+    // echo '</select>'; 
 }
 
 /**
@@ -118,7 +118,7 @@ function wpt_save_events_meta( $post_id, $post ) {
 
 	// Verify this came from the our screen and with proper authorization,
 	// because save_post can be triggered at other times.
-	if ( ! isset( $_POST['size'] ) ||! isset( $_POST['availability'] ) || ! isset( $_POST['price'] ) || ! isset( $_POST['description'] ) || ! wp_verify_nonce( $_POST['event_fields'], basename(__FILE__) ) ) {
+	if ( ! isset( $_POST['size'] ) || ! isset( $_POST['price'] ) || ! isset( $_POST['description'] ) || ! wp_verify_nonce( $_POST['event_fields'], basename(__FILE__) ) ) {
 		return $post_id;
 	}
 
@@ -126,7 +126,7 @@ function wpt_save_events_meta( $post_id, $post ) {
 	// This sanitizes the data from the field and saves it into an array $events_meta.
     $events_meta['description'] = esc_textarea( $_POST['description'] );
     $events_meta['price'] = esc_textarea( $_POST['price'] );
-    $events_meta['availability'] = esc_textarea( $_POST['availability'] );
+    // $events_meta['availability'] = esc_textarea( $_POST['availability'] );
     $events_meta['size'] = esc_textarea( $_POST['size'] );
 
 	// Cycle through the $events_meta array.
