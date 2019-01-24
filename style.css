@@ -1185,6 +1185,11 @@ header, main, footer{
 .entry-title{
 	padding-top: 60px;
 }
+
+.home .entry-title { 
+	color: #fff;
+	font-size: .3em;
+	}
 .site-brands{
 	width: 100%;
 	text-align: center;
