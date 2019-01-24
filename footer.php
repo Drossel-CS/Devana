@@ -12,6 +12,7 @@
 ?>
 
 	</div><!-- #content -->
+	<div class="lem wrapp"></div>
 	<div class="instagram-gallery wrapper">
 		<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>  <!-- instagram shortcode -->
 	</div>
