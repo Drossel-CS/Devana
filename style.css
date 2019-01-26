@@ -749,11 +749,13 @@ nav.main-navigation ul {
 nav.main-navigation a {
 	text-decoration: none;
 	white-space:nowrap;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 500;
+	font-size: 1.5em;
 	color: #707070;
 	display: block;
-	font-family: 'Montserrat';
+	/* font-family: 'Montserrat'; */
+	font-family: 'Great Vibes', cursive;
 	display: flex;
 	justify-content: space-between;
 }
@@ -1118,6 +1120,22 @@ header, main, footer{
 	margin: 0;
 	padding: 0;
 }
+.home-section{
+	/* font-family: 'Great Vibes', cursive; */
+	font-family: 'Montserrat';
+	font-size: 1.2em;
+	color: #707070;
+}
+.home-title{
+	font-family: 'Great Vibes', cursive;
+	font-size: 4em;
+	color: #707070;
+	margin: 0;
+	padding: 20px 0;
+}
+
+
+
 .group:after {
     visibility: hidden;
     display: block;
@@ -1296,7 +1314,27 @@ header, main, footer{
 				width: 95%;
 			}
 		}
-		@media screen and (max-width: 870px) {
+		@media screen and (max-width: 768px) {
+
+			nav.main-navigation ul{
+				display: block;
+			}
+			nav.main-navigation li{
+				float: none;
+				padding: 0;
+				margin: 0;
+			}
+			nav.main-navigation li a {
+				padding: 14px 8px;
+				border-bottom: 1px solid #f4f4f4;
+				background: #fff;
+				display: block;
+			}
+			nav.main-navigation li a:hover{
+				color: #fff;
+				background: #B438A2;
+		
+			}
 			.widget{
 				float: none;
 				width: 100%;
@@ -1319,6 +1357,14 @@ header, main, footer{
 				background: #B438A2;
 				padding: 14px 8px;
 			}
+			
+			.img__wrap{
+				width: 100%;
+				float: none;
+			}
+			.img__img{
+				float: none;
+			}
 		}
 
 
@@ -1339,6 +1385,7 @@ header, main, footer{
 
   .img__img{
 	float: left;
+	width: 100%;
   }
   
   .img__description_layer {
@@ -1354,8 +1401,6 @@ header, main, footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
-  
 	/* transition effect. not necessary */
 	transition: opacity .2s, visibility .2s;
   }
@@ -1374,6 +1419,9 @@ header, main, footer{
   
   .img__wrap:hover .img__description {
 	transform: translateY(0);
+  }
+  .img__title{
+	  text-transform: uppercase;
   }
 
 .pagination{
@@ -1397,28 +1445,3 @@ header, main, footer{
 		font-weight: 600;
 		color: #B438A2;
 	}
-
-  @media screen and (max-width: 870px) {
-	.wrapp{
-		width: 95%;
-	}
-	nav.main-navigation ul{
-		display: block;
-	}
-	nav.main-navigation li{
-		float: none;
-		padding: 0;
-		margin: 0;
-	}
-	nav.main-navigation li a {
-		padding: 14px 8px;
-		border-bottom: 1px solid #f4f4f4;
-		background: #fff;
-		display: block;
-	}
-	nav.main-navigation li a:hover{
-		color: #fff;
-		background: #B438A2;
-
-	}
-}

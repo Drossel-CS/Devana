@@ -19,6 +19,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
