@@ -7,19 +7,19 @@
 
 	<div class="site-contact-left">
         <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Vaše meno*" id="name" name="name">
+            <input type="text" class="form-control" placeholder="Vaše meno*" id="name" name="name">
         </div>
 
         <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Váš email*" id="email" name="email" >
+            <input type="text" class="form-control" placeholder="Váš email*" id="email" name="email" >
         </div>
         <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Telefónny kontakt" id="phone" name="phone" >
+            <input type="text" class="form-control" placeholder="Telefónny kontakt" id="phone" name="phone" >
         </div>
     </div>
     <div class="site-contact-left">
         <div class="form-group">
-            <textarea name="message" id="message" class="form-control" placeholder="Vaša správa*"></textarea>
+            <textarea name="message" id="message" class="form-control textarea" placeholder="Vaša správa*"></textarea>
         </div>
     </div>
     <div class="site-contact-right">

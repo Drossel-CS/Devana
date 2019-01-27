@@ -1201,7 +1201,13 @@ header, main, footer{
 	color: #EAEAEA;
 }
 .entry-title{
-	padding-top: 60px;
+	padding-top: 70px;
+	font-family: 'Great Vibes', cursive;
+	font-size: 3em;
+	color: #817F7F;
+	text-align: center;
+	/* margin: 0; */
+	/* padding: 20px 0; */
 }
 
 .home .entry-title { 
@@ -1314,8 +1320,7 @@ header, main, footer{
 				width: 95%;
 			}
 		}
-		@media screen and (max-width: 768px) {
-
+		@media screen and (max-width: 860px) {
 			nav.main-navigation ul{
 				display: block;
 			}
@@ -1335,6 +1340,15 @@ header, main, footer{
 				background: #B438A2;
 		
 			}
+			.main-navigation{
+				border-bottom: none;
+			}
+			.entry-title{
+				padding-top: 10px;
+			}
+		}
+		@media screen and (max-width: 768px) {
+
 			.widget{
 				float: none;
 				width: 100%;
@@ -1424,6 +1438,9 @@ header, main, footer{
 	  text-transform: uppercase;
   }
 
+
+
+  
 .pagination{
 	float: none;
 	width: 100%;
@@ -1445,3 +1462,66 @@ header, main, footer{
 		font-weight: 600;
 		color: #B438A2;
 	}
+
+/*--------------------------------------------------------------
+# Contact form
+--------------------------------------------------------------*/
+
+.form-control-msg, .form-control-invalid-email {
+	display: none;
+}
+/* has-error je class, ktory sa priradi small elementu z contact-form.js aby bol zobrazeny error  */
+.has-error > .form-control {
+	border: 1px solid #B438A2 !important;
+}
+/* js-show-feedback je class, ktory sa prida small elementu z contact-form.js aby bol zobrazeny feedback */
+.js-show-feedback {
+	display: block;
+}
+
+.form-btn:disabled,
+button[disabled]{
+  border: none;
+  background-color:rgb(244, 244, 244);
+  color: #666666;
+  font-size: .9em;
+}
+
+.site-contact-left{
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+.site-contact-right{
+	clear: both;
+}
+	.site-contact-right p{
+		margin: 0px;
+		padding: 0 10px; 
+		/* font-size: 0.9em; */
+		color: #817F7F;
+	}
+	.mini{
+		font-size: 0.2em;
+	}
+
+input[ type="text"], textarea {
+	width: 100%;
+	border-radius: 10px;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+.textarea{
+	height: 208px;
+}
+
+
+
+form button{
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	margin-top: 10px; 
+	cursor: pointer;
+	letter-spacing: 10px;
+}

@@ -5,13 +5,13 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
-@media screen and (min-width: 871px) { 
+@media screen and (min-width: 769px) { 
  .hamburger {
   display: none;
  }
 }
 
- @media screen and (max-width: 870px) { 
+ @media screen and (max-width: 860px) { 
 
   .hamburger {
     padding: 5px 5px;
