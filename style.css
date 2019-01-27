@@ -67,7 +67,10 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
-
+p{
+	font-family: 'Montserrat';
+	line-height: 30px;
+}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -422,7 +425,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	/* font-family: "Courier 10 Pitch", Courier, monospace; */
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -433,7 +436,7 @@ pre {
 }
 
 code, kbd, tt, var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	/* font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; */
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -606,54 +609,6 @@ textarea {
 }
 
 
-/*--------------------------------------------------------------
-## Contact Form
---------------------------------------------------------------*/
-.form-control-msg, .form-control-invalid-email {
-	display: none;
-}
-/* has-error je class, ktory sa priradi small elementu z contact-form.js aby bol zobrazeny error  */
-.has-error > .form-control {
-	border: 1px solid #FF9494 !important;
-}
-/* js-show-feedback je class, ktory sa prida small elementu z contact-form.js aby bol zobrazeny feedback */
-.js-show-feedback {
-	display: block;
-}
-
-.form-btn:disabled,
-button[disabled]{
-  border: none;
-  background-color:rgb(244, 244, 244);
-  color: #666666;
-  font-size: .9em;
-}
-
-.site-contact-left{
-	float: left;
-	width: 50%;
-	/* padding: 10px; */
-}
-.site-contact-right{
-	clear: both;
-}
-	.site-contact-right p{
-		margin: 0px;
-		padding: 5px; 
-		/* font-size: 0.9em; */
-		color: #817F7F;
-	}
-	.mini{
-		font-size: 0.2em;
-	}
-
-form button{
-	font-family: 'Montserrat';
-	text-transform: uppercase;
-	margin-top: 10px; 
-	cursor: pointer;
-	letter-spacing: 10px;
-}
 
 
 
@@ -1131,7 +1086,7 @@ header, main, footer{
 	font-size: 4em;
 	color: #707070;
 	margin: 0;
-	padding: 20px 0;
+	padding: 40px 0;
 }
 
 
@@ -1484,7 +1439,7 @@ button[disabled]{
   border: none;
   background-color:rgb(244, 244, 244);
   color: #666666;
-  font-size: .9em;
+  /* font-size: 1em; */
 }
 
 .site-contact-left{
@@ -1495,15 +1450,15 @@ button[disabled]{
 
 .site-contact-right{
 	clear: both;
+	padding: 0 10px;
 }
 	.site-contact-right p{
-		margin: 0px;
-		padding: 0 10px; 
-		/* font-size: 0.9em; */
 		color: #817F7F;
+		font-family: 'Montserrat';
 	}
 	.mini{
-		font-size: 0.2em;
+		font-size: 0.4em;
+		margin-top: 10px;
 	}
 
 input[ type="text"], textarea {
@@ -1511,17 +1466,37 @@ input[ type="text"], textarea {
 	border-radius: 10px;
 	padding: 15px 20px;
 	margin-bottom: 20px;
+	font-family: 'Montserrat';
+}
+input[ type="checkbox"]{
+	width: 20px;
+	
 }
 .textarea{
 	height: 208px;
 }
 
 
-
+.site-button{
+	padding: 5px;
+}
 form button{
 	font-family: 'Montserrat';
 	text-transform: uppercase;
 	margin-top: 10px; 
 	cursor: pointer;
 	letter-spacing: 10px;
+	background: #B438A2;
+	color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	border: none;
+	width: 100%;
+}
+@media screen and (max-width: 860px) {
+	
+	.site-contact-left{
+		float: none;
+		width: 100%;
+	}
 }
