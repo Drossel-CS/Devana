@@ -6,20 +6,23 @@ var breakpoint = 860;
 
 if ($(document).width() <= breakpoint){
   $("#primary-menu").css("display","none");
+
 }
 
   $('.menu-toggle').click(function(e) {
     e.preventDefault();
+
       if ($('#primary-menu').is(":visible") ) {
-        $('.menu-toggle').toggleClass("is-active");
-        $('#primary-menu').stop(true,true).slideUp(700);
+        $('.menu-toggle').removeClass("is-active");
+        $('#primary-menu').stop(true,true).slideUp(400);
         
       } else {
-        $('.menu-toggle').toggleClass("is-active");
-        $('#primary-menu').stop(true,true).slideDown(700);
-        
+        $('.menu-toggle').addClass("is-active");
+        $('#primary-menu').stop(true,true).slideDown(400); 
       }
+      
     });
+
 
   sizeOfScreen = $(window).width();
 
