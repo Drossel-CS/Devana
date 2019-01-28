@@ -5,12 +5,12 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
-@media screen and (min-width: 769px) { 
+@media screen and (min-width: 861px) { 
  .hamburger {
   display: none;
  }
 }
-
+/* tu bolo 860 */
  @media screen and (max-width: 860px) { 
 
   .hamburger {

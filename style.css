@@ -1276,6 +1276,9 @@ header, main, footer{
 			}
 		}
 		@media screen and (max-width: 860px) {
+			nav.main-navigation div{
+				width: 100%;
+			}
 			nav.main-navigation ul{
 				display: block;
 			}

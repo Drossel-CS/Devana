@@ -60,7 +60,7 @@
                 </header>
                 <main class="wrapp">
                     <div class="">
-                        <p>Ahoj Lenka, <b><?php echo $title;?></b> ti zasiela nasledovnú správu</p>
+                        <p>Ahoj Lili, <b><?php echo $title;?></b> ti zasiela nasledovnú správu</p>
                         <p class="text text-content"><i><?php echo $message; ?></i></p>
                     </div>
                 </main>
