@@ -1301,8 +1301,18 @@ header, main, footer{
 			.main-navigation{
 				border-bottom: none;
 			}
+			.home-title{
+				font-size: 2em;
+			}
 			.entry-title{
 				padding-top: 10px;
+			}
+			.img__wrap{
+				width: 100%;
+				float: none;
+			}
+			.img__img{
+				float: none;
 			}
 		}
 		@media screen and (max-width: 768px) {
@@ -1329,14 +1339,7 @@ header, main, footer{
 				background: #B438A2;
 				padding: 14px 8px;
 			}
-			
-			.img__wrap{
-				width: 100%;
-				float: none;
-			}
-			.img__img{
-				float: none;
-			}
+=
 		}
 
 
