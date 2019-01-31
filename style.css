@@ -684,9 +684,9 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	float: left;
-	display: flex;
-	z-index: 1000;
+	z-index: 10000;
+	position: absolute;
+	opacity: .9;
 }
 .hamburger{
 	float: left;
@@ -697,22 +697,19 @@ nav.main-navigation ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: space-between;
+	justify-content: center;	
 }
-
-nav.main-navigation a {
+nav.main-navigation li {
+	display: inline-flex;
+	padding-bottom: 20px;
+}
+nav.main-navigation li a {
 	text-decoration: none;
-	white-space:nowrap;
-	/* text-transform: uppercase; */
 	font-weight: 500;
 	font-size: 1.5em;
 	color: #707070;
-	display: block;
-	/* font-family: 'Montserrat'; */
 	font-family: 'Great Vibes', cursive;
-	display: flex;
-	justify-content: space-between;
+	padding: 0 15px;
 }
 
 nav.main-navigation > ul:after {
@@ -721,20 +718,6 @@ nav.main-navigation > ul:after {
 	display: block;
 }
 
-nav.main-navigation li  {
-	float:left;
-}
-
-nav.main-navigation li a {
-	/* padding: 20px; */
-	padding-bottom: 20px;
-}
-	nav.main-navigation li a:first-child{
-		padding-left: 20px;
-	}
-	nav.main-navigation li a:last-child{
-		padding-right: 20px;
-	}
 nav.main-navigation li a:hover {
 	color: #B438A2;
 }
@@ -766,15 +749,11 @@ nav.main-navigation li a:hover {
 }
 .site-header-primary-nav{
 	position: absolute;
-	display: flex;
 	text-align: center;
-	flex-direction: column;
-	justify-content: space-between;
 	cursor: pointer;
 	width: 100%;
 	margin-top: 80px;
 	height: auto;
-	/* background: #fff; */
 }
 .main-navigation{
 	width: 100%;
@@ -783,7 +762,6 @@ nav.main-navigation li a:hover {
 	width: 100%;
 	height: auto;
 	background: #fff;
-	/* border-top: 1px solid #EAEAEA; */
 }
 .nav.main-navigation li{
 	padding: 10px 30px;
@@ -1445,6 +1423,7 @@ form button{
 		float: none;
 		padding: 0;
 		margin: 0;
+		display: block;
 	}
 	nav.main-navigation li a {
 		padding: 14px 8px;
