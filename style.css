@@ -1270,79 +1270,6 @@ header, main, footer{
 			text-decoration: none;
 		}
 
-		@media screen and (max-width: 1100px) {
-			.wrapp{
-				width: 95%;
-			}
-		}
-		@media screen and (max-width: 860px) {
-			nav.main-navigation div{
-				width: 100%;
-			}
-			nav.main-navigation ul{
-				display: block;
-			}
-			nav.main-navigation li{
-				float: none;
-				padding: 0;
-				margin: 0;
-			}
-			nav.main-navigation li a {
-				padding: 14px 8px;
-				border-bottom: 1px solid #f4f4f4;
-				background: #fff;
-				display: block;
-			}
-			nav.main-navigation li a:hover{
-				color: #fff;
-				background: #B438A2;
-		
-			}
-			.main-navigation{
-				border-bottom: none;
-			}
-			.home-title{
-				font-size: 2em;
-			}
-			.entry-title{
-				padding-top: 10px;
-			}
-			.img__wrap{
-				width: 100%;
-				float: none;
-			}
-			.img__img{
-				float: none;
-			}
-		}
-		@media screen and (max-width: 768px) {
-
-			.widget{
-				float: none;
-				width: 100%;
-				margin: 0 auto;
-				margin-bottom: 50px;
-			}
-			.main-navigation{
-				border: none;
-			}
-			.menu-footer-menu-1-container ul li, .menu-footer-menu-2-container ul li, .menu-footer-menu-3-container ul li,.menu-footer-menu-4-container ul li{
-				padding: 0px;
-				border-bottom: 1px solid #EAEAEA;
-			}
-			.menu-footer-menu-1-container ul li a, .menu-footer-menu-2-container ul li a, .menu-footer-menu-3-container ul li a,.menu-footer-menu-4-container ul li a{
-				display: block;
-				padding: 14px 8px;
-			}
-			.menu-footer-menu-1-container ul li a:hover, .menu-footer-menu-2-container ul li a:hover, .menu-footer-menu-3-container ul li a:hover,.menu-footer-menu-4-container ul li a:hover{
-				color: #fff;
-				background: #B438A2;
-				padding: 14px 8px;
-			}
-=
-		}
-
-
 
 /*--------------------------------------------------------------
 # Products
@@ -1355,7 +1282,6 @@ header, main, footer{
 	width: 33.3333%;
 	border: 2px solid white;
 	cursor: pointer;
-
   }
 
   .img__img{
@@ -1499,10 +1425,84 @@ form button{
 	border: none;
 	width: 100%;
 }
+
+
+
+
+@media screen and (max-width: 1100px) {
+	.wrapp{
+		width: 95%;
+	}
+}
 @media screen and (max-width: 860px) {
-	
+	nav.main-navigation div{
+		width: 100%;
+	}
+	nav.main-navigation ul{
+		display: block;
+	}
+	nav.main-navigation li{
+		float: none;
+		padding: 0;
+		margin: 0;
+	}
+	nav.main-navigation li a {
+		padding: 14px 8px;
+		border-bottom: 1px solid #f4f4f4;
+		background: #fff;
+		display: block;
+	}
+	nav.main-navigation li a:hover{
+		color: #fff;
+		background: #B438A2;
+	}
+	.main-navigation{
+		border-bottom: none;
+	}
+	.home-title{
+		font-size: 2em;
+	}
+	.entry-title{
+		padding-top: 10px;
+	}
 	.site-contact-left{
 		float: none;
+		width: 100%;
+	}
+	.img__wrap{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.widget{
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.main-navigation{
+		border: none;
+	}
+	.menu-footer-menu-1-container ul li, .menu-footer-menu-2-container ul li, .menu-footer-menu-3-container ul li,.menu-footer-menu-4-container ul li{
+		padding: 0px;
+		border-bottom: 1px solid #EAEAEA;
+	}
+	.menu-footer-menu-1-container ul li a, .menu-footer-menu-2-container ul li a, .menu-footer-menu-3-container ul li a,.menu-footer-menu-4-container ul li a{
+		display: block;
+		padding: 14px 8px;
+	}
+	.menu-footer-menu-1-container ul li a:hover, .menu-footer-menu-2-container ul li a:hover, .menu-footer-menu-3-container ul li a:hover,.menu-footer-menu-4-container ul li a:hover{
+		color: #fff;
+		background: #B438A2;
+		padding: 14px 8px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	.img__wrap{
 		width: 100%;
 	}
 }

@@ -114,8 +114,7 @@ function drossel_products( $atts, $content = null ) {
 						<div>
 							Požičovné: <strong><?php echo get_post_meta( get_the_ID(), 'price', true ); ?></strong> €
 						</div>
-			</div>
-					
+					</div>	
 				</div>
 			</div>
 			<?php
