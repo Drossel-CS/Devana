@@ -30,10 +30,11 @@
 	<div class="site-branding wrapp">
 		
 		<div class="site-header-group">
-			<div class="site-header-logo">
+			<div class="shopingbag"></div>
+			<div class="site-header-logo logo">
 				<?php the_custom_logo();?>
 			</div>
-			<div class="site-header-burger">
+			<div class="site-header-burger burger">
 				<button class="hamburger hamburger--spin menu-toggle" type="button">
 					<span class="hamburger-box">
 					<span class="hamburger-inner"></span>

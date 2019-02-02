@@ -651,7 +651,8 @@ textarea {
   .heading-center-footer::before, .heading-center-footer::after{
 	color: #414141;
   }
-
+  
+  
 
 
 /*--------------------------------------------------------------
@@ -1133,6 +1134,14 @@ header, main, footer{
 	background-color: currentColor;
 	color: #EAEAEA;
 }
+
+
+
+.logo{
+	width: 100%;
+	/* float: left; */
+}
+
 .entry-title{
 	padding-top: 70px;
 	font-family: 'Great Vibes', cursive;
@@ -1450,6 +1459,15 @@ form button{
 	}
 	.img__wrap{
 		width: 50%;
+	}
+	.shopingbag, .burger{
+		float: right;
+		position: absolute;
+		right: 0;
+	}
+	.logo{
+		width: 100%;
+		float: left;
 	}
 }
 
