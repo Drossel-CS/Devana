@@ -28,14 +28,15 @@ function drossel_save_contact(){
    
     //email settings
     $to = get_bloginfo('admin_email');
-    $subject = 'Drossel Contact Form - '.$title;
+    $subject = 'Salón Lili kontaktný formulár - '.$title;
     
-    $headers[] = 'From: '.get_bloginfo('name').' <'.$to.'>'; 
+    //$headers[] = 'From: '.get_bloginfo('name').' <'.$to.'>'; 
+    $headers[] = 'From: Salón Lili <info@salonlili.sk>';
     $headers[] = 'Reply-To: '.$title.' <'.$email.'>';
     $headers[] = 'Content-Type: text/html; charset=UTF-8';
    
+    //echo wp_mail($to, $subject, $body, $headers);
     echo wp_mail($to, $subject, $body, $headers);
-    
 
 	die();
 }
